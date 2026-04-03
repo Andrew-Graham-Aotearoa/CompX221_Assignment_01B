@@ -1,6 +1,6 @@
 [README.md](https://github.com/user-attachments/files/26370731/README.md)
 # Museum Exhibit Companion
-### DSIGN241-26A — Aspects of Web Design | Assignment 1
+### DSIGN241-26A — Aspects of Web Design 
 
 A digital companion website for a temporary Pop Art museum exhibit, designed to be accessible and provide layered content for a broad audience.
 
@@ -16,7 +16,16 @@ A digital companion website for a temporary Pop Art museum exhibit, designed to 
 ---
 
 ## Project Brief
+Assignment 1 part A:
 Design a digital companion website for a temporary Museum Exhibit that is accessible and provides layered content for children, general public, and more curious users seeking deeper detail.
+Used: Figma and Adobe Illustrator.
+
+Assignment 1 part B:
+Build out a Website using a pre-existing template. Add CSS and HTML to continue the design styles.
+
+Assignment 2 — Refactoring (Part A: Investigate, Part B: Implementation)
+A: Investigate Tailwind CSS and Bootstrap, rebuild part or all of a page and understand the context you might use each framework.
+B: Pick a framework and build out the previously templated CSS site.
 
 ---
 
@@ -64,7 +73,7 @@ The design uses contemporary web tools to allude to **four colour process printi
 ---
 
 ## UI Components
-- **Layout** — Mobile-first carousel with swipeable content panels
+- **Layout** — Mobile-first carousel with swipeable content panels (not implemented in the first iteration, still at the concept level)
 - **Content** — Styled speech bubbles linking content to images
 - **Display Boxes** — High contrast irregular shaped boxes with dark text
 - **Icons** — Shared icon set created in Figma
@@ -81,7 +90,16 @@ The design uses contemporary web tools to allude to **four colour process printi
 
 ---
 
-## Academic Context
-**Paper:** DSIGN241-26A — Aspects of Web Design
-**University:** University of Waikato, 2026
-**Assignment:** Assignment 1 — Style Guide (Part A: Proposal, Part B: Implementation)
+
+**Assignment:** Assignment 2 — Style Guide (Part A: Proposal, Part B: Implementation)
+
+## Technical Implementation & Refactoring
+To ensure the "Pop Art" aesthetic remained mathematically consistent across the 3-column exhibit grid, I implemented several advanced front-end strategies:
+
+- **Design Token Integration:** Translated Figma styles into a custom `tailwind.config.js`, enabling a "Single Source of Truth" for brand colors like `pop-red` and the `Bangers` typeface.
+- **Structural Stewardship:** Refactored the DOM from a nested CSS architecture to a flattened Flexbox model. This enabled the use of `flex-grow` to normalize container heights across grid rows, ensuring a perfectly aligned horizontal baseline.
+- **Automated Quality Control:** Utilized the **Prettier** formatter with the **Tailwind CSS plugin** to automate class sorting and maintain code legibility throughout the build.
+
+"The primary goal of this refactor was not merely aesthetic, but an investigation as per the assignment brief.
+By migrating the Museum Companion index page to Tailwind CSS I gained an understanding of the application of this framework.
+I did not start with mobile first because I needed to gain some understanding of the framework first.
