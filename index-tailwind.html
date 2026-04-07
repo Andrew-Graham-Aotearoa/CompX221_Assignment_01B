@@ -78,11 +78,14 @@
 
 
     <!-- ======== HEADER ======== -->
-    <header class="flex flex-row justify-between items-center p-6 px-8 py-12 md:px-20 lg:px-72 bg-color-bg-alt">
+    <header class="flex flex-col md:flex-row justify-between items-center p-6 px-8 py-12 md:px-20 lg:px-72 bg-color-bg-alt">
 
       <!-- TODO: replace "Site Title" with your site name -->
-      <a href="index.html" class="block w-1/4"><img src="images/mosaic_logo.png" alt="The Mosiac Museum Of Art"></a>
+       <div class="mb-4 md:mb-0">
+      <a href="index.html"><img src="images/mosaic_logo.png" alt="The Mosiac Museum Of Art" class="h-12"></a>
+       </div>
       <nav>
+        
         <ul class="flex flex-row gap-6 font-body text-xl">
           <li><a href="index.html" class="text-color-primary hover:text-color-accent">Home</a></li>
           <li><a href="pages/about.html" class="hover:text-color-accent">About</a></li>
